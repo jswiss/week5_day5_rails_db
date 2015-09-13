@@ -1,0 +1,8 @@
+<h1>index</h1>
+
+<% @cuisines.each do |cuisine| %>
+	<h2><%= link_to cuisine.name  %></h2>
+	<p><%= cuisine.description %></p>
+<% end %>
+
+<h3><%= link_to 'Add a new cuisine!', new_cuisine_path(@cuisine) %></h3> 

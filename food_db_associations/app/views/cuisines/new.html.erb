@@ -1,0 +1,22 @@
+<%= form_for @cuisine do |form| %>
+	<div class="field">
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</div>
+	<div class="field">
+		<%= form.label :region %>
+		<%= form.text_field :region %>
+	</div>
+	<div class="field">
+		<%= form.label :spicy %>
+		<%= select_tag(:spicy, options_for_select([['yes', true], ['no', false]])) %>
+	</div>
+	<div class="field">
+		<%= form.label :description %>
+		<%= form.text_field :description %>
+	</div>
+	<div class="action">
+		<%= form.submit 'New Cuisine' %>
+	</div>
+
+<% end %>
