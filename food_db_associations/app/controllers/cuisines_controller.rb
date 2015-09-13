@@ -21,6 +21,7 @@ class CuisinesController < ApplicationController
 	end
 
 	def show
+		@cuisine = Cuisine.find(params[:id])
 	end
 
 	def edit

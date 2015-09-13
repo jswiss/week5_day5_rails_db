@@ -1,0 +1,10 @@
+<h1><%= @cuisine.name %></h1>	
+<h2>From <%= @cuisine.region %></h2>	
+<h3>Is it spicy? <%= @cuisine.spicy %></h3>	
+<p><%= @cuisine.description %></p>	
+
+<%= link_to 'Edit', edit_cuisine_path(@cuisine)  %>
+<%= link_to 'Delete', @cuisine, method: :delete, data: { confirm: "Are you sure you want to delete this?"} %>
+<div class="home">
+	<%= link_to "Home", cuisines_path(@cuisines) %>
+</div>
